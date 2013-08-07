@@ -1,0 +1,17 @@
+*.vsp
+*.psess
+*.sdf
+*.ogg
+*.obj
+*.lib
+*.dll
+*.pdb
+*.ilk
+*.exp
+*.wav
+*.tlog
+Dependencies/*.*
+Dependencies/
+Crude/Debug/*.*
+Core/Debug/*.*
+Debug/*.*
