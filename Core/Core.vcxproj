@@ -70,15 +70,28 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Base\SubsystemBootstrap.cpp" />
+    <ClCompile Include="Configuration\Configuration.cpp" />
+    <ClCompile Include="Configuration\ConfigurationNode.cpp" />
+    <ClCompile Include="Configuration\ConfigurationParser.cpp" />
+    <ClCompile Include="Configuration\ConfigurationSubsystem.cpp" />
+    <ClCompile Include="Configuration\lex.yy.cpp" />
     <ClCompile Include="Debug\Console.cpp" />
     <ClCompile Include="Debug\ConsoleSubsystem.cpp" />
+    <ClCompile Include="FileSystem\FileSystem.cpp" />
+    <ClCompile Include="FileSystem\FileSystemSubsystem.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base\Message.h" />
     <ClInclude Include="Base\Subsystem.hpp" />
     <ClInclude Include="Base\SubsystemBootstrap.hpp" />
+    <ClInclude Include="Configuration\Configuration.h" />
+    <ClInclude Include="Configuration\ConfigurationNode.h" />
+    <ClInclude Include="Configuration\ConfigurationParser.h" />
+    <ClInclude Include="Configuration\ConfigurationParserDefinitions.h" />
     <ClInclude Include="Debug\Console.hpp" />
+    <ClInclude Include="FileSystem\FileSystem.hpp" />
+    <ClInclude Include="FileSystem\FileSystemJob.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -25,6 +25,18 @@
     <Filter Include="Source Files\Debug">
       <UniqueIdentifier>{d9e4beae-597c-4c33-a1ba-3fde8eb23089}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\FileSystem">
+      <UniqueIdentifier>{12493d32-79d7-4733-9035-3e74f0be1cf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FileSystem">
+      <UniqueIdentifier>{f918bb4d-5287-4a10-b65e-28eadbe6eefe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Configuration">
+      <UniqueIdentifier>{b2f05481-847a-4cfb-b330-68e3f4d1bb69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Configuration">
+      <UniqueIdentifier>{1719378e-9185-44f7-973f-689020433051}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -39,6 +51,27 @@
     <ClCompile Include="Debug\ConsoleSubsystem.cpp">
       <Filter>Source Files\Debug</Filter>
     </ClCompile>
+    <ClCompile Include="FileSystem\FileSystem.cpp">
+      <Filter>Source Files\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="FileSystem\FileSystemSubsystem.cpp">
+      <Filter>Source Files\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Configuration\Configuration.cpp">
+      <Filter>Source Files\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="Configuration\ConfigurationSubsystem.cpp">
+      <Filter>Source Files\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="Configuration\ConfigurationNode.cpp">
+      <Filter>Source Files\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="Configuration\lex.yy.cpp">
+      <Filter>Source Files\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="Configuration\ConfigurationParser.cpp">
+      <Filter>Source Files\Configuration</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base\Subsystem.hpp">
@@ -52,6 +85,24 @@
     </ClInclude>
     <ClInclude Include="Base\Message.h">
       <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="FileSystem\FileSystem.hpp">
+      <Filter>Header Files\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration\Configuration.h">
+      <Filter>Header Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration\ConfigurationNode.h">
+      <Filter>Header Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration\ConfigurationParserDefinitions.h">
+      <Filter>Header Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration\ConfigurationParser.h">
+      <Filter>Header Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="FileSystem\FileSystemJob.hpp">
+      <Filter>Header Files\FileSystem</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

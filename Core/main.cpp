@@ -2,22 +2,30 @@
 #include "Containers\List.h"
 #include "String\StringPool.h"
 #include "Debug\Console.hpp"
+#include "FileSystem\FileSystem.hpp"
+
 #include "Base\Subsystem.hpp"
 #include "Base\SubsystemBootstrap.hpp"
 
+#include "Configuration\ConfigurationNode.h"
+#include "Configuration\Configuration.h"
+
+#include "Configuration\ConfigurationParser.h"
+
+#include <stdio.h>
+
 int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE, PWSTR pCmdLine, int nCmdShow)
 {
-	//Crude::StringPool testPool;
-	Core::Console* testConsole = new Core::Console();
 
-	//testPool.InsertString("this is a test");
-	//testPool.InsertString("hope this code works");
+	Core::Configuration test;
 
-	Core::SubsystemBootstrap engineBoot;
+	test.Import("e.cfg");
 
-	engineBoot.RegisterSubsystem(testConsole);
+	Crude::String as = test.GetValue("Player.Name");
 
-	bool StartupResult = engineBoot.Boot();
+	Core::FileSystem TestSystem("test");
+
+	TestSystem.CreateFileSystem();
 
 	return 0;
 }

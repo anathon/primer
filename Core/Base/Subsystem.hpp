@@ -12,7 +12,7 @@
 			void Shutdown(); \
 			bool Poll(); \
 			void PullMessages(Crude::Que<Core::Message>& Messages); \
-			void ProcessMessage(Crude::Que<Core::Message>& Messages); \
+			void ProcessMessage(Crude::Que<Core::Message> Messages); \
 			void onSystemDown(Subsystem& TargetSystem); \
 			void onSystemUp(Subsystem& TargetSystem);
 
@@ -35,7 +35,7 @@ namespace Core {
 
 	public:
 		virtual void PullMessages(Crude::Que<Core::Message>& Messages) = 0;
-		virtual void ProcessMessage(Crude::Que<Core::Message>& Messages) = 0;
+		virtual void ProcessMessage(Crude::Que<Core::Message> Messages) = 0;
 
 	public:
 		virtual void onSystemDown(Subsystem& TargetSystem) = 0;

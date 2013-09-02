@@ -18,7 +18,10 @@ namespace Crude {
 	public:
 		Tree();
 		~Tree();
-	public:
+	private:
+		//class TreeNode {
+		//	TreeNode Nodes[]
+		//};
 	};
 
 }

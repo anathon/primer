@@ -104,7 +104,7 @@ namespace Core {
 			} else {
 				// Round complete, sort the limbo list and append to the SortedNodes list.
 				Sort(LimboNodes);
-				for (int l = 0; l < LimboNodes.Size(); l++)
+				for (unsigned int l = 0; l < LimboNodes.Size(); l++)
 					SortedNodes.Insert(LimboNodes.At(l));
 
 				LimboNodes.Clear();
@@ -113,6 +113,14 @@ namespace Core {
 			// Next Round!
 		}
 
+		delete StartupList;
+		StartupList = new Crude::List<Subsystem*>(SortedNodes);
+
+		for (unsigned int i = 0; i < StartupList->Size(); i++) {
+
+			StartupList->At(i)->Startup();
+
+		}
 
 		return true;
 

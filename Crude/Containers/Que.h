@@ -32,6 +32,7 @@ namespace Crude {
 		void			Push(Type* Object);
 		Type*			Peek();
 		Type*			Pop();
+		unsigned int	Size();
 	};
 
 	template <class Type>
@@ -63,6 +64,11 @@ namespace Crude {
 		Type* ReturnAddress = m_pData.Get();
 		m_pData.Remove();
 		return ReturnAddress;
+	}
+
+	template <class Type>
+	unsigned int Que<Type>::Size() {
+		return m_pData.Size();
 	}
 
 }
